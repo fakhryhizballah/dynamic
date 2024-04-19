@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     origin: DataTypes.STRING,
     destination: DataTypes.STRING,
     seats: DataTypes.INTEGER,
+    status: DataTypes.ENUM('booking', 'approved', 'rejected'),
     price: DataTypes.FLOAT,
     description: DataTypes.STRING
   }, {

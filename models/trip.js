@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     arrival: DataTypes.DATE,
     price: DataTypes.FLOAT,
     seats: DataTypes.INTEGER,
+    status: DataTypes.ENUM('ready', 'pick-up', 'on-trip', 'completed', 'cancelled'),
     description: DataTypes.STRING
   }, {
     sequelize,

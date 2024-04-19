@@ -13,7 +13,9 @@ module.exports = {
         type: Sequelize.STRING
       },
       phone: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        primaryKey: true,
+        unique: true
       },
       createdAt: {
         allowNull: false,

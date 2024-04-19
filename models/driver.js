@@ -11,6 +11,18 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Driver.belongsTo(models.Member, {
+        foreignKey: 'memberId',
+        as: 'member'
+      });
+      Driver.hasMany(models.Trip, {
+        foreignKey: 'driverId',
+        as: 'trips'
+      });
+      Driver.hasMany(models.Vehicle, {
+        foreignKey: 'driverId',
+        as: 'vehicles'
+      });
     }
   }
   Driver.init({

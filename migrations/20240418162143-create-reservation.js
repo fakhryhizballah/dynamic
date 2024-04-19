@@ -40,6 +40,9 @@ module.exports = {
       seats: {
         type: Sequelize.INTEGER
       },
+      status: {
+        type: Sequelize.ENUM('booking', 'approved', 'rejected')
+      },
       price: {
         type: Sequelize.FLOAT
       },

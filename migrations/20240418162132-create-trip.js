@@ -49,6 +49,9 @@ module.exports = {
       seats: {
         type: Sequelize.INTEGER
       },
+      status: {
+        type: Sequelize.ENUM('ready', 'pick-up', 'on-trip', 'completed', 'cancelled')
+      },
       description: {
         type: Sequelize.STRING
       },

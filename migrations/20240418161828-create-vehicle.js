@@ -17,7 +17,9 @@ module.exports = {
         }
       },
       plate: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        primaryKey: true,
+        unique: true
       },
       brand: {
         type: Sequelize.STRING
