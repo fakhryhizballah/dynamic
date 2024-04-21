@@ -14,28 +14,36 @@ module.exports = {
         references: {
           model: 'Drivers',
           key: 'id'
-        }
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       vehicleId: {
         type: Sequelize.INTEGER,
         references: {
           model: 'Vehicles',
-          key: 'id'
-        }
+          key: 'id',
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       origin: {
         type: Sequelize.STRING,
         references: {
           model: 'Destinations',
           key: 'name'
-        }
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       destination: {
         type: Sequelize.STRING,
         references: {
           model: 'Destinations',
           key: 'name'
-        }
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       departure: {
         type: Sequelize.DATE

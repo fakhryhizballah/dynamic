@@ -21,7 +21,9 @@ module.exports = {
         references: {
           model: 'Destinations',
           key: 'name'
-        }
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       destination: {
         type: Sequelize.STRING,
@@ -29,8 +31,10 @@ module.exports = {
           model: {
             tableName: 'Destinations',
           },
-          key: 'name'
-        }
+          key: 'name',
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       distance: {
         type: Sequelize.FLOAT

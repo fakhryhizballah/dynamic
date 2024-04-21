@@ -13,13 +13,14 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {
           model: 'Drivers',
-          key: 'id'
-        }
+          key: 'id',
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       plate: {
         type: Sequelize.STRING,
         primaryKey: true,
-        unique: true
       },
       brand: {
         type: Sequelize.STRING
@@ -38,6 +39,10 @@ module.exports = {
       },
       photo: {
         type: Sequelize.STRING
+      },
+      vehicleStatus: {
+        type: Sequelize.ENUM('active', 'inactive'),
+        defaultValue: 'active'
       },
       createdAt: {
         allowNull: false,
