@@ -21,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     year: DataTypes.INTEGER,
     color: DataTypes.STRING,
     seats: DataTypes.INTEGER,
-    photo: DataTypes.STRING
+    photo: DataTypes.STRING,
+    vehicleStatus: DataTypes.ENUM('active', 'inactive')
   }, {
     sequelize,
     modelName: 'Vehicle',

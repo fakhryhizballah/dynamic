@@ -2,6 +2,7 @@
 const {
   Model
 } = require('sequelize');
+const jwt = require('jsonwebtoken');
 module.exports = (sequelize, DataTypes) => {
   class Driver extends Model {
     /**
@@ -24,6 +25,18 @@ module.exports = (sequelize, DataTypes) => {
         as: 'vehicles'
       });
     }
+    generateToken = () => {
+      const payload = {
+        id: this.id,
+        fullName: this.fullName,
+        phone: this.phone,
+        profileImg: this.profileImg,
+        license: this.license
+      };
+      const secretKey = process.env.JWT_SECRET_KEY;
+      const token = jwt.sign(payload, secretKey, { expiresIn: 360 * 60 });
+      return token;
+    };
   }
   Driver.init({
     fullName: DataTypes.STRING,
