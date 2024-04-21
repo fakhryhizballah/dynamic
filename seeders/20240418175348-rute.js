@@ -6,7 +6,7 @@ module.exports = {
     await queryInterface.bulkInsert('Routes', [
       {
         name: 'Sambas-Pemangkat',
-        descriptionRoute: "['Sambas', 'Pemangkat']",
+        descriptionRoute: "'Sambas','Pemangkat'",
         origin: 'Sambas',
         destination: 'Pemangkat',
         distance: 300,
@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         name: 'Sambas-Singkawang',
-        descriptionRoute: "['Sambas', 'Pemangkat', 'Singkawang']",
+        descriptionRoute: "'Sambas','Pemangkat','Singkawang'",
         origin: 'Sambas',
         destination: 'Singkawang',
         distance: 200,
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         name: 'Sambas-Mempawah',
-        descriptionRoute: "['Sambas', 'Pemangkat', 'Singkawang', 'Mempawah']",
+        descriptionRoute: "'Sambas','Pemangkat','Singkawang','Mempawah'",
         origin: 'Sambas',
         destination: 'Mempawah',
         distance: 282,
@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         name: 'Sambas-Pontianak',
-        descriptionRoute: "['Sambas', 'Pemangkat', 'Singkawang', 'Mempawah', 'Pontianak']",
+        descriptionRoute: "'Sambas','Pemangkat','Singkawang','Mempawah','Pontianak'",
         origin: 'Sambas',
         destination: 'Pontianak',
         distance: 300,
@@ -50,7 +50,7 @@ module.exports = {
       },
       {
         name: 'Pemangkat-Sambas',
-        descriptionRoute: "['Pemangkat', 'Sambas']",
+        descriptionRoute: "'Pemangkat','Sambas'",
         origin: 'Pemangkat',
         destination: 'Sambas',
         distance: 300,
@@ -61,7 +61,7 @@ module.exports = {
       },
       {
         name: 'Pemangkat-Singkawang',
-        descriptionRoute: "['Pemangkat', 'Singkawang']",
+        descriptionRoute: "'Pemangkat','Singkawang'",
         origin: 'Pemangkat',
         destination: 'Singkawang',
         distance: 100,
@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         name: 'Pemangkat-Pontianak',
-        descriptionRoute: "['Pemangkat', 'Singkawang', 'Mempawah', 'Pontianak']",
+        descriptionRoute: "'Pemangkat','Singkawang','Mempawah','Pontianak'",
         origin: 'Pemangkat',
         destination: 'Pontianak',
         distance: 182,
@@ -83,7 +83,7 @@ module.exports = {
       },
       {
         name: 'Pemangkat-Mempawah',
-        descriptionRoute: "['Pemangkat', 'Singkawang', 'Mempawah']",
+        descriptionRoute: "'Pemangkat','Singkawang','Mempawah'",
         origin: 'Pemangkat',
         destination: 'Mempawah',
         distance: 182,
@@ -95,7 +95,7 @@ module.exports = {
 
       {
         name: 'Singkawang-Pontianak',
-        descriptionRoute: "['Singkawang', 'Mempawah', 'Pontianak']",
+        descriptionRoute: "'Singkawang','Mempawah','Pontianak'",
         origin: 'Singkawang',
         destination: 'Pontianak',
         distance: 100,
@@ -106,7 +106,7 @@ module.exports = {
       },
       {
         name: 'Mempawah-Pontianak',
-        descriptionRoute: "['Mempawah', 'Pontianak']",
+        descriptionRoute: "'Mempawah','Pontianak'",
         origin: 'Mempawah',
         destination: 'Pontianak',
         distance: 18,
@@ -117,7 +117,7 @@ module.exports = {
       },
       {
         name: 'Pontianak-Mempawah',
-        descriptionRoute: "['Pontianak', 'Mempawah']",
+        descriptionRoute: "'Pontianak','Mempawah'",
         origin: 'Pontianak',
         destination: 'Mempawah',
         distance: 18,
@@ -128,7 +128,7 @@ module.exports = {
       },
       {
         name: 'Pontianak-Singkawang',
-        descriptionRoute: "['Pontianak', 'Mempawah', 'Singkawang']",
+        descriptionRoute: "'Pontianak','Mempawah','Singkawang'",
         origin: 'Pontianak',
         destination: 'Singkawang',
         distance: 100,
@@ -139,7 +139,7 @@ module.exports = {
       },
       {
         name: 'Pontianak-Pemangkat',
-        descriptionRoute: "['Pontianak', 'Mempawah', 'Singkawang', 'Pemangkat']",
+        descriptionRoute: "'Pontianak','Mempawah','Singkawang','Pemangkat'",
         origin: 'Pontianak',
         destination: 'Pemangkat',
         distance: 100,
@@ -150,7 +150,7 @@ module.exports = {
       },
       {
         name: 'Pontianak-Sambas',
-        descriptionRoute: "['Pontianak', 'Mempawah', 'Singkawang', 'Pemangkat', 'Sambas']",
+        descriptionRoute: "'Pontianak','Mempawah','Singkawang','Pemangkat','Sambas'",
         origin: 'Pontianak',
         destination: 'Sambas',
         distance: 300,
@@ -161,7 +161,7 @@ module.exports = {
       },
       {
         name: 'Singkawang-Mempawah',
-        descriptionRoute: "['Singkawang', 'Mempawah']",
+        descriptionRoute: "'Singkawang','Mempawah'",
         origin: 'Singkawang',
         destination: 'Mempawah',
         distance: 82,
@@ -172,7 +172,7 @@ module.exports = {
       },
       {
         name: 'Singkawang-Pemangkat',
-        descriptionRoute: "['Singkawang', 'Pemangkat']",
+        descriptionRoute: "'Singkawang','Pemangkat'",
         origin: 'Singkawang',
         destination: 'Pemangkat',
         distance: 82,
@@ -183,7 +183,7 @@ module.exports = {
       },
       {
         name: 'Singkawang-Sambas',
-        descriptionRoute: "['Singkawang', 'Sambas']",
+        descriptionRoute: "'Singkawang','Sambas'",
         origin: 'Singkawang',
         destination: 'Pemangkat',
         distance: 82,
@@ -194,7 +194,7 @@ module.exports = {
       },
       {
         name: 'Mempawah-Singkawang',
-        descriptionRoute: "['Mempawah', 'Singkawang']",
+        descriptionRoute: "'Mempawah','Singkawang'",
         origin: 'Mempawah',
         destination: 'Singkawang',
         distance: 82,
@@ -205,7 +205,7 @@ module.exports = {
       },
       {
         name: 'Mempawah-Pemangkat',
-        descriptionRoute: "['Mempawah','Singkawang', 'Pemangkat']",
+        descriptionRoute: "'Mempawah','Singkawang','Pemangkat'",
         origin: 'Mempawah',
         destination: 'Pemangkat',
         distance: 82,
@@ -216,7 +216,7 @@ module.exports = {
       },
       {
         name: 'Mempawah-Sambas',
-        descriptionRoute: "['Mempawah','Singkawang', 'Pemangkat', 'Sambas']",
+        descriptionRoute: "'Mempawah','Singkawang','Pemangkat','Sambas'",
         origin: 'Mempawah',
         destination: 'Sambas',
         distance: 82,
@@ -225,7 +225,6 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-
     ], {});
   },
 
