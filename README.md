@@ -1,7 +1,7 @@
 # Project Dynamic Broker Transportation
 
 ## Description
-[This project makes the world better, and easier]
+This project makes the world better, and easier
 
 ## Installation
 Create a file named `.env` in the root directory of your project and add the necessary environment variables.
